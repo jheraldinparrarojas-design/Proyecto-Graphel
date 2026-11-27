@@ -12,6 +12,9 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+a {
+    text-decoration: none;
+}
 
 header {
     display: flex;
@@ -53,6 +56,7 @@ body > main {
 .vision {
     display: flex;
     flex-direction: column;
+    object-fit: cover;
 }
 
 .vision img {
@@ -68,6 +72,7 @@ body > main {
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
+    width: 80%;
 }    
 
 .vision-texto h2 {
@@ -233,4 +238,58 @@ footer {
     padding: 38px;
     font-size: 13px;
     margin-top: auto;
+}
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 5%;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px 20px;
+    }
+
+    .vision-texto h2 {
+        font-size: 26px;
+    }
+
+    .registro {
+        flex-direction: column;
+        gap: 15px;
+        padding: 25px 5%;
+        text-align: center;
+    }
+
+    .registro form {
+        width: 100%;
+    }
+
+    .registro input {
+        flex: 1;
+        min-width: 0;
+        width: auto;
+    }
+    .carteles {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 5%;
+    }
+
+    .cartel {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .contenido {
+        flex-direction: column;
+        padding: 20px 5%;
+    }
+    .contenido aside,
+    .lateral {
+        align-self: stretch;
+    }
 }
