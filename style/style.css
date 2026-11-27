@@ -51,12 +51,13 @@ nav a.activo {
 body > main {
     display: flex;
     flex-direction: column;
+
 }
 
 .vision {
     display: flex;
     flex-direction: column;
-    object-fit: cover;
+    position: relative;
 }
 
 .vision img {
